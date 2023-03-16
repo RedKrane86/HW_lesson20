@@ -2,6 +2,8 @@ import pytest
 
 from demostration_solution.tests.test_dao.test_movie import movie_dao
 from demostration_solution.service.movie import MovieService
+
+
 class TestMovieService:
     @pytest.fixture(autouse=True)
     def movie_service(self, m_dao=movie_dao):

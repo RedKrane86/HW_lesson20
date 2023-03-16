@@ -4,6 +4,7 @@ from unittest.mock import MagicMock
 from demostration_solution.implemented import director_dao
 from demostration_solution.dao.model.director import Director
 
+
 @pytest.fixture
 def director_dao():
     john = Director(id=1, name='john')

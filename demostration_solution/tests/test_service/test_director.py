@@ -2,6 +2,8 @@ import pytest
 
 from demostration_solution.tests.test_dao.test_director import director_dao
 from demostration_solution.service.director import DirectorService
+
+
 class TestDirectorService:
     @pytest.fixture(autouse=True)
     def director_service(self, d_dao=director_dao):
